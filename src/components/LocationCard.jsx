@@ -9,15 +9,15 @@ const LocationInfo = ({ locationInfo }) => {
       <hr className="location__hr" />
       <ul className="location__list">
         <li className="location__list__element">
-          <span className="location__element">Type: </span>
+          <span className="location__element">Type: </span> <br/>
           <span className="location__description">{locationInfo?.type}</span>
         </li>
         <li className="location__list__element">
-          <span className="location__element">Dimension: </span>
+          <span className="location__element">Dimension: </span> <br/>
           <span className="location__description">{locationInfo?.dimension}</span>
         </li>
         <li className="location__list__element">
-          <span className="location__element">Population: </span>
+          <span className="location__element">Population: </span>  <br/>
           <span className="location__description">{locationInfo?.residents.length}</span>
         </li>
       </ul>

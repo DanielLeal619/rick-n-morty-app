@@ -119,7 +119,7 @@
     text-align: center;    
     background-color: var(--bg-dark);  
     width: 100%;    
-    max-width: 450px;
+    max-width: 30em;
     padding: 0.5em;   
     border-radius: 0.6em;    
     margin: auto; 
@@ -129,8 +129,14 @@
 
 /* BODY */
 
+.location {
+    margin-right: 2em;
+    padding-left: 1.5em;
+}
+
 .location__dimension {
     padding: 0.3em 0.7em;
+    margin-left: 0.7em;
     color: var(--green-light); 
 }
 
@@ -140,7 +146,7 @@
 }
 
 .location__list {
-    display: flex;       
+    display: flex;         
 }
 
 .location__element {
@@ -149,9 +155,13 @@
 }
 
 .location__description {
-    font-size: 25px;
+    font-size: 22px;
     font-family: 'Average Sans', sans-serif;
     font-weight: 400;
+}
+
+.location__list__element {
+    width: 9em;
 }
 
 /* BUTTON */
@@ -187,4 +197,34 @@
     color: var(--green-light);    
     border: solid;
     border-color: var(--bg-dark);
+}
+
+@media only screen and (max-width: 600px) {
+    .general__location {   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;    
+        background-color: var(--bg-dark);  
+        width: 100%;    
+        max-width: 23em;
+        padding: 0.5em 2em 0.5em 2em;   
+        border-radius: 0.6em;    
+        margin: auto; 
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .location__element {
+        color: var(--green-light);
+        font-size: 16px;  
+              
+    }
+    
+    .location__description {
+        font-size: 15px;
+        font-family: 'Average Sans', sans-serif;
+        font-weight: 400;
+    }
+    
 }
