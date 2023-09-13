@@ -1,0 +1,190 @@
+/* ROOT */
+
+:root {
+    --bg-light: #084851;
+    --bg-dark: #05292E;
+    --green-light: #5BB238;
+    --green-dark: #278940;
+    --gray: #7E7E7E;
+    --red: #D20708;   
+}
+
+/* RESIDENT CARD */
+/* GENERAL */
+
+.all__render {
+    background-color: var(--bg-light);
+}
+
+.cards {
+    display: flex;   
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 1em;
+}
+
+.resident {
+    width: 100%;
+    max-width: 250px;
+    background-color: var(--bg-light);
+    border-radius: 0.4em;
+    overflow: hidden;
+    transition: 0.3s;
+    color: white;
+}
+
+.resident:hover {
+    scale: 1.03;
+    background-color: var(--bg-dark);   
+    color: var(--green-light); 
+}
+
+
+/* HEADER */
+
+.resident__header {
+    position: relative;
+}
+
+.resident__status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    gap: 0.5em;
+    padding: 0.1em 0.5em;
+    border-radius: 0 0.4em 0.4em 0;
+    bottom: 12em;
+    width: 40%;
+    background-color: var(--bg-light);
+    color: white;
+}
+
+.resident__status__circle {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    background-color: var(--gray);
+}
+
+.Alive {
+    background-color: var(--green-light);
+}
+
+.Dead {
+    background-color: var(--red);
+} 
+
+/* BODY */
+
+.resident__body {
+    padding: 0.7em 0.9em;   
+}
+
+.resident__name {
+    text-align: center;
+    margin: 0.3em;    
+}
+
+.resident__hr {
+    margin-bottom: 0.5em;
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.resident__list__element {
+    display: flex;
+    flex-direction: column;
+}
+
+.resident__element {    
+    font-size: 0.9em;
+    margin: 0.3em;
+}
+
+.resident__info {
+    padding-left: 0.8em;
+    color: white;
+    font-family: 'Average Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* LOCATION CARD */
+/* GENERAL */
+.general__location {   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;    
+    background-color: var(--bg-dark);  
+    width: 100%;    
+    max-width: 450px;
+    padding: 0.5em;   
+    border-radius: 0.6em;    
+    margin: auto; 
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* BODY */
+
+.location__dimension {
+    padding: 0.3em 0.7em;
+    color: var(--green-light); 
+}
+
+.location__hr {
+    border-color: rgba(255, 255, 255, 0.25);
+    margin-bottom: 0.5em;
+}
+
+.location__list {
+    display: flex;       
+}
+
+.location__element {
+    color: var(--green-light);
+    font-size: 25px;    
+}
+
+.location__description {
+    font-size: 25px;
+    font-family: 'Average Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* BUTTON */
+
+.input__button {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+}
+
+.input__bar {
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 0.8em 0 0 0.8em;
+    border-color: var(--bg-dark);
+}
+
+.search__button {
+    padding: 0.5em 0.9em;
+    font-family: 'Average Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    background-color: var(--green-light);    
+    color: var(--bg-dark);
+    border-radius: 0 0.7em 0.7em 0;
+    border: solid;
+    border-color: var(--green-light);
+    transition: 0.3s;
+}
+
+.search__button:hover {
+    background-color: var(--bg-dark);
+    color: var(--green-light);    
+    border: solid;
+    border-color: var(--bg-dark);
+}
