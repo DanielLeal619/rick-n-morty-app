@@ -189,6 +189,7 @@
     border-radius: 0 0.7em 0.7em 0;
     border: solid;
     border-color: var(--green-light);
+    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -227,4 +228,13 @@
         font-weight: 400;
     }
     
+    .location__hr {
+        border-color: rgba(255, 255, 255, 0.25);
+        margin-bottom: 0.5em;
+    }
+    
+    .location__list__element {
+        width: 7em;
+    }
+
 }
