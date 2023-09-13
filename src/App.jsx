@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className='all__render'>
-      <img src="../public/banner.jpg" alt="" />
+      <img src="https://i.redd.it/o6cwlzg3exk41.png" alt="" />
       <form className="input__button" onSubmit={handleSubmit}>
         <input className="input__bar" ref={inputSearch} type="text" />
         <button className='search__button'>Search a Dimension</button>
