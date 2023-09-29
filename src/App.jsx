@@ -32,6 +32,7 @@ function App() {
         <input className="input__bar" ref={inputSearch} type="text" />
         <button className='search__button'>Search a Dimension</button>
       </form>
+      <h3 className='search__dimension'>Search a dimension from 1 to 126🧪</h3>
       <div className='all'>
         {
           locationInfo?.residents.length === 0

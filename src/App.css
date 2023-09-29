@@ -238,3 +238,8 @@
     }
 
 }
+
+.search__dimension {
+    color: var(--green-light);
+    text-align: center;
+}
